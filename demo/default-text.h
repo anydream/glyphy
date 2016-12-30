@@ -1,71 +1,40 @@
-static const char default_text[] =
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt nibh quis semper malesuada. Mauris sit amet metus sed tellus gravida\n"
-"maximus sit amet a enim. Morbi et lorem congue, aliquam lorem vitae, condimentum erat. Mauris aliquet, sapien consequat blandit mattis, velit ante\n"
-"molestie mi, ac condimentum justo leo sed odio. Curabitur at suscipit quam. Ut ac convallis ante, at sollicitudin sapien. Nulla pellentesque felis\n"
-"id mi blandit dictum. Phasellus ultrices, odio non volutpat tincidunt, neque quam tristique lacus, nec gravida nulla ante id risus. Nulla sit amet\n"
-"bibendum lectus, sed bibendum lectus. Vivamus ultrices metus sit amet sapien posuere volutpat. Suspendisse luctus non mauris nec iaculis. Duis\n"
-"mattis enim libero, ac malesuada tortor gravida tempor. Cras sagittis felis at sollicitudin fermentum. Duis et ipsum bibendum, viverra felis quis,\n"
-"consectetur lacus.  Donec vulputate risus imperdiet, tincidunt purus nec, vestibulum lorem. Morbi iaculis tincidunt rutrum. Duis sit amet nulla\n"
-"ut lectus efficitur suscipit. Curabitur urna turpis, congue lacinia varius vitae, interdum vel dolor. Vestibulum sit amet suscipit arcu, sit amet\n"
-"tincidunt ipsum. Maecenas feugiat ante vel fermentum viverra. Sed aliquam sem ac quam bibendum, sit amet fringilla augue pharetra. Morbi scelerisque\n"
-"tempus purus, interdum tempor est pulvinar bibendum. Duis tincidunt dictum ante vel sodales. Fusce quis cursus metus. Pellentesque mi mauris,\n"
-"tincidunt ut orci ut, interdum dapibus dolor. Aliquam blandit, nisl et rhoncus laoreet, tellus nulla blandit tellus, sit amet cursus magna enim nec\n"
-"ante. Integer venenatis a est sed hendrerit.  Proin id porttitor turpis, aliquam tempus ex. Morbi tristique, felis ut aliquet luctus, orci tortor\n"
-"sodales sem, vel imperdiet justo tortor sit amet arcu. Quisque ipsum sem, lacinia in fermentum eu, maximus in lectus. Pellentesque quis scelerisque\n"
-"neque, eget ultricies ligula. Etiam accumsan orci mi, ut blandit nibh viverra quis. Pellentesque tincidunt auctor dictum. Integer tincidunt neque\n"
-"at enim ultrices, in accumsan augue elementum. Sed placerat eros leo, ac venenatis metus dignissim vel. Suspendisse mauris sem, pulvinar id purus\n"
-"non, hendrerit pretium sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla accumsan massa id nulla\n"
-"viverra semper. Aliquam sit amet neque vitae diam rhoncus feugiat. Etiam tellus purus, rhoncus id enim a, fermentum volutpat neque. Vestibulum\n"
-"tortor augue, dapibus at varius sed, varius at nisl. Ut pharetra elementum varius.  Nulla molestie, urna sit amet euismod venenatis, nunc magna\n"
-"bibendum augue, vitae elementum augue elit eget urna. Morbi a leo at sapien tempor varius sit amet venenatis metus. Sed ac pellentesque turpis,\n"
-"quis malesuada ligula. Cras quis ex mattis, ultricies nibh ac, vestibulum velit. Sed sed sagittis libero, at consectetur massa. Cras quis risus\n"
-"nunc. Curabitur vitae odio laoreet, sodales sem eu, fermentum risus. Quisque laoreet felis eu mattis laoreet. Phasellus auctor velit ut varius\n"
-"accumsan. Sed molestie bibendum mi varius auctor. Vestibulum iaculis, lacus ut mattis convallis, turpis purus cursus nibh, nec ullamcorper dolor nibh\n"
-"eget nunc. Nam lacinia justo ac vestibulum lacinia. Nulla vestibulum eu urna a sodales. Aliquam blandit congue lacus vitae ornare.  Nulla bibendum\n"
-"vehicula tortor eu vestibulum. Mauris nec pretium est. Pellentesque faucibus quam et est sollicitudin, quis condimentum justo placerat. Etiam urna\n"
-"elit, porttitor sodales dui congue, maximus sodales dolor. Proin lacinia diam quis libero molestie viverra. Pellentesque tortor mauris, sodales\n"
-"vel luctus non, euismod eu risus. Nulla sed condimentum ex. Morbi ac mi quis felis laoreet mattis. Fusce nec quam orci. Morbi pretium quis risus\n"
-"a tincidunt. Phasellus accumsan suscipit nisi sed viverra. Vestibulum eu vulputate lorem. Nullam fermentum turpis eget nulla rutrum egestas. Sed\n"
-"tortor nisi, consectetur a semper ut, lacinia in lectus. Phasellus finibus at diam nec interdum.  Nunc mollis congue enim, et tempor neque dapibus\n"
-"quis. Nunc a egestas quam, vitae tempor mi. Sed at lobortis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames\n"
-"ac turpis egestas. Etiam blandit mi sit amet ipsum accumsan, eget euismod nulla facilisis. Morbi imperdiet ex massa, in porttitor nibh posuere\n"
-"ut. Curabitur bibendum lorem id ultricies placerat. Aenean tincidunt malesuada mauris, sit amet rhoncus odio ornare ac. Morbi venenatis turpis\n"
-"non nulla tincidunt, bibendum tincidunt quam ultricies.  Donec dictum, lorem eget commodo malesuada, risus nisi ornare augue, feugiat accumsan\n"
-"dui massa eu ipsum. Mauris aliquam sapien id felis faucibus ornare. Nullam eleifend felis vel metus rutrum mollis. Quisque posuere eros vitae\n"
-"imperdiet dapibus. Suspendisse quis est laoreet, faucibus lectus at, mattis est. Vestibulum nec neque ut ante auctor luctus. Nunc posuere vulputate\n"
-"egestas. Quisque sit amet sodales erat, ac suscipit lorem. Ut auctor dapibus efficitur. Phasellus tincidunt cursus neque in ultrices. Sed pretium\n"
-"viverra felis vitae aliquet. Vivamus at quam libero. Phasellus mattis orci ut egestas finibus. Suspendisse mattis maximus consequat. Ut id aliquam\n"
-"lectus.  Maecenas ut libero in nulla tempus accumsan at at tellus. Quisque a nibh quis ligula pharetra vehicula id et ante. Pellentesque et nisl in\n"
-"lectus commodo sollicitudin non quis lectus. Vestibulum varius leo at diam fringilla, nec vulputate diam pellentesque. Curabitur id nisl in nibh\n"
-"sollicitudin vestibulum non sit amet odio. Nunc pulvinar lectus ac est sagittis mollis. Nunc vel consectetur nulla, sit amet eleifend elit. Etiam\n"
-"volutpat, ligula id cursus posuere, est lacus sagittis purus, scelerisque tempus sem lectus tempor nisi. Curabitur scelerisque leo et neque\n"
-"ultricies semper. Sed in efficitur urna. Aliquam tempus cursus tortor. Sed feugiat mi elit, id ullamcorper nulla ullamcorper vitae. Suspendisse\n"
-"rutrum ornare orci, eget facilisis nisi ornare et. Aenean sed leo vitae lorem congue lobortis. Nunc vel dui condimentum, sagittis sapien ac,\n"
-"ultricies odio. Suspendisse elementum iaculis commodo.  Phasellus pellentesque purus nec nisl pretium eleifend. Suspendisse a imperdiet urna. Fusce\n"
-"eleifend et nunc at elementum. Morbi imperdiet varius mattis. Cras pharetra urna nulla, gravida sodales orci blandit et. Nulla dignissim eleifend\n"
-"tempus. Vivamus placerat tristique purus et facilisis. In eget maximus urna. Mauris ut commodo elit. Aliquam erat volutpat. Donec efficitur augue\n"
-"vitae nisi suscipit, vel aliquet sem posuere. Ut placerat ullamcorper lorem, eget consequat nunc ultricies nec. Nulla scelerisque ex non velit\n"
-"efficitur imperdiet. Aliquam faucibus augue vel rhoncus feugiat. Aenean hendrerit nunc sem, ac hendrerit tortor fringilla sed.  Morbi lorem massa,\n"
-"dictum at maximus vitae, dictum et mi. Nullam ante elit, ultrices tincidunt tempor quis, aliquam ut lacus. Donec ut aliquet purus. Sed dolor mi,\n"
-"rhoncus auctor tristique ac, lobortis non urna. Sed tempor leo ut finibus mattis. Aenean fermentum augue eget nisi aliquet feugiat. Donec convallis\n"
-"laoreet nulla id malesuada. Vestibulum in congue enim, non sagittis massa. Ut et euismod nibh, eu euismod leo. Class aptent taciti sociosqu ad litora\n"
-"torquent per conubia nostra, per inceptos himenaeos.  Cras sodales purus nec ligula egestas cursus. Sed gravida, elit non eleifend semper, ex erat\n"
-"ultricies augue, nec suscipit velit metus in augue. Nulla dapibus, ante a aliquam cursus, mi purus lobortis purus, sit amet feugiat neque sapien\n"
-"at mauris. Vivamus mattis sagittis purus, quis viverra dolor mollis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames\n"
-"ac turpis egestas. Fusce in semper justo, eget mattis magna. Donec libero augue, aliquam eget mi at, laoreet sodales metus.  Etiam gravida, libero\n"
-"eu pellentesque imperdiet, nulla dolor scelerisque tortor, vitae placerat est risus non metus. Etiam vel laoreet est. Ut posuere turpis facilisis,\n"
-"faucibus magna nec, ornare augue. Pellentesque auctor feugiat ornare. Etiam vulputate vitae odio et lacinia. Aenean semper purus vitae erat tincidunt\n"
-"volutpat. Sed et laoreet nulla, eu condimentum arcu.  Maecenas magna arcu, condimentum ut elementum vitae, laoreet sed justo. Maecenas bibendum\n"
-"lacus vel blandit tincidunt. Praesent mattis, eros eget auctor malesuada, felis ligula egestas eros, at lacinia dolor lacus sed arcu. Praesent\n"
-"lectus lacus, rhoncus ultricies facilisis vel, tristique pellentesque eros. Donec et justo placerat, finibus lectus id, mattis augue. Nam\n"
-"consequat, felis a commodo varius, odio erat viverra urna, mollis sodales nibh lectus non turpis. Maecenas quis egestas risus, eget lobortis\n"
-"dui. Sed pellentesque vitae neque non condimentum. Proin eu maximus magna, ac posuere libero. Maecenas porta interdum metus eu hendrerit. Integer\n"
-"ut blandit risus. Maecenas facilisis consectetur dolor a mattis. Morbi elementum tincidunt turpis, vel tempus est mattis vel.  Morbi et ultrices\n"
-"velit, at dapibus neque. Vestibulum dictum in mi et rhoncus. In congue, elit vel ultricies maximus, arcu augue venenatis neque, sed imperdiet purus\n"
-"leo et risus. Quisque tincidunt sapien felis, vitae elementum erat aliquet in. Curabitur mauris nibh, dictum sollicitudin dolor ut, accumsan luctus\n"
-"nulla. Aenean quis diam quam. Etiam viverra odio at felis tincidunt laoreet. Proin euismod non lectus sit amet lacinia. Proin aliquet mauris et dui\n"
-"consectetur sagittis. Ut tempus fringilla odio, vitae scelerisque neque efficitur ut. Quisque a nulla pulvinar, varius dolor sed, eleifend magna.\n"
-"Vivamus eu neque pulvinar, accumsan odio venenatis, mollis leo. Morbi aliquet ac dolor sed lobortis. Maecenas urna sapien, volutpat non sagittis in,\n"
-"tempor eget enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed mollis porta lectus, id lobortis metus elementum vitae. Nullam\n"
-"non nulla sed risus rhoncus tempor. Nullam id quam hendrerit, dictum purus ut, maximus ipsum. Cras auct\n"
+﻿static const char default_text[] =
+R"xx(雲華夫人，王母第二十三女，太真王夫人之妹也。名瑤姬。受徊風混合萬景鍊神飛化之道。
+嘗東海遊還，過江上，有巫山焉。峯巖挺拔。林壑幽麗，巨石如壇，留連久之。時大禹理水，
+駐山下。大風卒至，崖振谷隕不可制。因與夫人相值，拜而求助。即敕侍女，授禹策召鬼神之書，
+因命其神狂章、虞余、黃魔、大翳、庚辰、童律等。助禹斵石疏波。決塞導阨，以循其流。
+禹拜而謝焉。禹嘗詣之。崇巘之巔。顧盼之際，化而為石。或倐然飛騰。散為輕雲，油然而止，
+聚為夕雨；或化遊龍，或為翔鶴，千態萬狀，不可親也。禹疑其狡獪怪誕，非真仙也，問諸童律。
+律曰：「天地之本者道也，運道之用者聖也，聖之品次，真人仙人也。其有禀氣成真，
+不修而得道者，木公、金母是也。蓋二氣之祖宗、陰陽之原本、仙真之主宰、造化之元光。
+雲華夫人，金母之女也。昔師三元道君，受上清寶經，受書於紫清闕下，為雲華上宮夫人。
+主領教童真之士，理在玉英之臺，隱見變化，蓋其常也。亦由凝氣成真，與道合體，
+非寓胎禀化之形，是西華少陰之氣也。且氣之彌綸天地，經營動植，大包造化，細入毫髮。
+在人為人，在物為物，豈止於雲雨龍鶴，飛鴻騰鳳哉。禹然之，後往詣焉，忽見雲樓玉臺，
+瑤宮瓊闕森然，既靈官侍衛，不可名識。獅子抱關，天馬啟塗，毒龍電獸，八威備軒，
+夫人宴坐于瑤臺之上。禹稽首問道。召禹使坐而言曰。夫聖匠肇興，剖大混之一樸，
+發為億萬之體。發大蘊之一苞，散為無窮之物。故步三光而立乎晷景，封九域而制乎邦國，
+刻漏以分晝夜，寒暑以成歲紀，兌離以正方位，山川以分陰陽，城廓以聚民。器械以衛衆。
+輿服以表貴賤，禾黍以備凶歉。凡此之制，上禀乎星辰，而取法乎神真，以養有形之物也。
+是故日月有幽明，生殺有寒暑，雷震有出入之期，風雨有動靜之常。清氣浮乎上。而濁衆散于下。
+廢興之數，治亂之運，賢愚之質，善惡之性，剛柔之氣，壽夭之命，貴賤之位，尊卑之叙，
+吉凶之感，窮達之期，此皆禀之於道，懸之于天，而聖人為紀也。性發乎天而命成乎人。
+立之者天，行之者道。道存則有，道去則非。道無物不可存也，非修不可致也。玄老有言，
+致虛極，守靜篤，萬物將自復。復謂歸於道而常存也。道之用也，變化萬端而不足其一，
+是故天參玄玄，地參混黃，人參道德。去此之外，非道也哉。長久之要者，天保其玄，
+地守其物，人養其氣，所以全也。則我命在我，非天地殺之，鬼神害之，失道而自逝也。
+志乎哉，勤乎哉，子之功及於物矣，勤逮於民矣，善格乎天矣，而未聞至道之要也。
+吾昔於紫清之闕受書，寶而勤之，我師三元道君曰，上真內經，天真所寶，封之金臺。
+佩入太微，則雲輪上往，神武抱關，振衣瑤房，遨宴希林，左招仙公，右棲白山，而下眄太空。
+汎乎天津，則乘雲騁龍，遊此名山，則真人詣房，萬人奉衛，山精伺迎。動有八景玉輪，
+靜則宴處金堂。亦謂之太上玉佩金璫之妙文也。汝將欲越巨海而無飈輪。渡飛砂而無雲軒。
+陟阨塗而無所轝。涉泥波而無所乘，陸則困於遠絕，水則懼於漂淪，將欲以導百谷而濬萬川也。
+危乎悠哉，太上愍汝之至，亦將授以靈寶真文，陸策虎豹，水制蛟龍，斷馘千邪，檢馭群凶，
+以成汝之功也。其在乎陽明之天也。吾所授寶書，亦可以出入水火，嘯叱幽冥，收束虎豹，
+呼召六丁。隱淪八地。顛倒五星，久視存身，與天相傾也。」因命侍女陵容華出丹玉之笈，
+開上清寶文以授，禹拜受而去，又得庚辰、虞余之助，遂能導波決川，以成其功，奠五岳，
+別九州，而天錫玄珪，以為紫庭真人。其後楚大夫宋玉，以其事言於襄王，王不能訪道要以求長生。
+築臺於高唐之舘。作陽臺之宮以祀之，宋玉作神仙賦以寓情，荒淫穢蕪。高真上仙，
+豈可誣而降之也。有祠在山下，世謂之大仙，隔岸有神女之石，即所化也。復有石天尊神女壇，
+側有竹，垂之若篲。有稿葉飛物着壇上者。竹則因風掃之，終瑩潔不為所污。楚人世祀焉。)xx"
 ;

@@ -28,7 +28,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
-
+#pragma execution_character_set("utf-8")
 
 #include "demo-buffer.h"
 #include "demo-font.h"
@@ -182,6 +182,11 @@ show_usage(const char *path)
   free(p);
 }
 
+// extern "C"
+// {
+// 	_declspec(dllexport) DWORD NvOptimusEnablement = 1;
+// }
+
 int
 main (int argc, char** argv)
 {
@@ -227,7 +232,7 @@ main (int argc, char** argv)
   glutInit (&argc, argv);
   glutInitWindowSize (WINDOW_W, WINDOW_H);
   glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
-  int window = glutCreateWindow ("GLyphy Demo");
+  int window = glutCreateWindow ((char*)L"test");
   glutReshapeFunc (reshape_func);
   glutDisplayFunc (display_func);
   glutKeyboardFunc (keyboard_func);
